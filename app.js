@@ -1,4 +1,12 @@
 // Código para fazer chamadas à API do Coinbase
+if ('Notification' in window) {
+    Notification.requestPermission().then(permission => {
+        if (permission === 'granted') {
+            console.log('Permissão para notificações concedida');
+        }
+    });
+}
+
 function fetchBitcoinPrice() {
   fetch('https://api.coinbase.com/v2/prices/BTC-USD/spot')
       .then(response => response.json())
