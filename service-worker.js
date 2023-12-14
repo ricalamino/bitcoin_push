@@ -1,6 +1,6 @@
 // service-worker.js
 
-const CACHE_NAME = 'bitcoin-price-monitor-v1';
+const CACHE_NAME = 'bitcoin-price-monitor-v2';
 const urlsToCache = [
     '/',
     '/index.html',
